@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ServerletViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,6 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window.rootViewController = [ServerletViewController new];
+    
     // Override point for customization after application launch.
     return YES;
 }
